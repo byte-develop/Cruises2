@@ -5,7 +5,7 @@ import TopLine from "./Components/TopLine";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import FindACruise from "./Pages/FindACruise";
-import CruiseDetails from "./pages/CruiseDetails";
+import CruiseDetails from "./Pages/CruiseDetails";
 import Ships from "./Pages/Ships";
 import Destinations from "./Pages/Destinations";
 import LastMinute from "./Pages/LastMinute";
