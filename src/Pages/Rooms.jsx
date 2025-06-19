@@ -57,7 +57,7 @@ const Rooms = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {/* Interior Staterooms */}
           <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-            <div className="h-80 bg-gray-300 rounded-t-lg"></div>
+            <div className="h-80 bg-cover bg-center bg-[url(../public/rr1.svg)] rounded-t-lg"></div>
             <div className="p-6">
               <h3
                 className="text-2xl font-normal text-gray-600 mb-4"
@@ -163,7 +163,7 @@ const Rooms = () => {
 
           {/* Ocean View Staterooms */}
           <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-            <div className="h-80 bg-gray-300 rounded-t-lg"></div>
+            <div className="h-80 bg-cover bg-center bg-[url(../public/rr2.svg)] rounded-t-lg"></div>
             <div className="p-6">
               <h3
                 className="text-2xl font-normal text-gray-600 mb-4"
@@ -195,6 +195,25 @@ const Rooms = () => {
                       stroke="currentColor"
                       strokeWidth="0.85"
                     />
+                    <path
+                      d="M1.64941 5.67969L6.22941 5.72969"
+                      stroke="currentColor"
+                    />
+                    <path
+                      d="M16.1299 20.1595V15.6895"
+                      stroke="currentColor"
+                      strokeWidth="0.85"
+                    />
+                    <path
+                      d="M16.5498 16.0293L5.58984 16.0393"
+                      stroke="currentColor"
+                      strokeWidth="0.85"
+                    />
+                    <path
+                      d="M5.80957 5.35938V16.3794"
+                      stroke="currentColor"
+                      strokeWidth="0.85"
+                    />
                   </svg>
                   <span
                     className="text-sm font-bold text-gray-600 uppercase tracking-[2px]"
@@ -220,6 +239,16 @@ const Rooms = () => {
                       stroke="currentColor"
                       strokeWidth="1.04167"
                     />
+                    <path
+                      d="M7.69462 16.8556C7.69462 16.8556 6.90295 8.92507 11.8752 8.34174C15.9863 7.86952 16.8057 9.23063 16.8057 9.23063C16.8057 9.23063 18.3752 10.3556 18.3752 16.8417"
+                      stroke="currentColor"
+                      strokeWidth="1.04167"
+                    />
+                    <path
+                      d="M10.0975 13.4531C10.0975 13.4531 9.50031 23.6753 12.667 25.5503C12.667 25.5503 16.5836 28.467 15.917 13.4531"
+                      stroke="currentColor"
+                      strokeWidth="1.04167"
+                    />
                   </svg>
                   <span
                     className="text-sm font-bold text-gray-600 uppercase tracking-[2px]"
@@ -240,7 +269,7 @@ const Rooms = () => {
 
           {/* Balcony Staterooms */}
           <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-            <div className="h-80 bg-gray-300 rounded-t-lg"></div>
+            <div className="h-80 bg-cover bg-center bg-[url(../public/rr3.svg)] rounded-t-lg"></div>
             <div className="p-6">
               <h3
                 className="text-2xl font-normal text-gray-600 mb-4"
@@ -272,6 +301,25 @@ const Rooms = () => {
                       stroke="currentColor"
                       strokeWidth="0.85"
                     />
+                    <path
+                      d="M1.64941 5.67969L6.22941 5.72969"
+                      stroke="currentColor"
+                    />
+                    <path
+                      d="M16.1299 20.1595V15.6895"
+                      stroke="currentColor"
+                      strokeWidth="0.85"
+                    />
+                    <path
+                      d="M16.5498 16.0293L5.58984 16.0393"
+                      stroke="currentColor"
+                      strokeWidth="0.85"
+                    />
+                    <path
+                      d="M5.80957 5.35938V16.3794"
+                      stroke="currentColor"
+                      strokeWidth="0.85"
+                    />
                   </svg>
                   <span
                     className="text-sm font-bold text-gray-600 uppercase tracking-[2px]"
@@ -297,6 +345,16 @@ const Rooms = () => {
                       stroke="currentColor"
                       strokeWidth="1.04167"
                     />
+                    <path
+                      d="M7.69462 16.8556C7.69462 16.8556 6.90295 8.92507 11.8752 8.34174C15.9863 7.86952 16.8057 9.23063 16.8057 9.23063C16.8057 9.23063 18.3752 10.3556 18.3752 16.8417"
+                      stroke="currentColor"
+                      strokeWidth="1.04167"
+                    />
+                    <path
+                      d="M10.0975 13.4531C10.0975 13.4531 9.50031 23.6753 12.667 25.5503C12.667 25.5503 16.5836 28.467 15.917 13.4531"
+                      stroke="currentColor"
+                      strokeWidth="1.04167"
+                    />
                   </svg>
                   <span
                     className="text-sm font-bold text-gray-600 uppercase tracking-[2px]"
@@ -317,7 +375,7 @@ const Rooms = () => {
 
           {/* Suite Staterooms */}
           <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-            <div className="h-80 bg-gray-300 rounded-t-lg"></div>
+            <div className="h-80 bg-cover bg-center bg-[url(../public/rr4.svg)] rounded-t-lg"></div>
             <div className="p-6">
               <h3
                 className="text-2xl font-normal text-gray-600 mb-4"
@@ -349,6 +407,25 @@ const Rooms = () => {
                       stroke="currentColor"
                       strokeWidth="0.85"
                     />
+                    <path
+                      d="M1.64941 5.67969L6.22941 5.72969"
+                      stroke="currentColor"
+                    />
+                    <path
+                      d="M16.1299 20.1595V15.6895"
+                      stroke="currentColor"
+                      strokeWidth="0.85"
+                    />
+                    <path
+                      d="M16.5498 16.0293L5.58984 16.0393"
+                      stroke="currentColor"
+                      strokeWidth="0.85"
+                    />
+                    <path
+                      d="M5.80957 5.35938V16.3794"
+                      stroke="currentColor"
+                      strokeWidth="0.85"
+                    />
                   </svg>
                   <span
                     className="text-sm font-bold text-gray-600 uppercase tracking-[2px]"
@@ -371,6 +448,16 @@ const Rooms = () => {
                   >
                     <path
                       d="M13.0281 7.91167C14.4702 7.91167 15.6392 6.74264 15.6392 5.30056C15.6392 3.85849 14.4702 2.68945 13.0281 2.68945C11.586 2.68945 10.417 3.85849 10.417 5.30056C10.417 6.74264 11.586 7.91167 13.0281 7.91167Z"
+                      stroke="currentColor"
+                      strokeWidth="1.04167"
+                    />
+                    <path
+                      d="M7.69462 16.8556C7.69462 16.8556 6.90295 8.92507 11.8752 8.34174C15.9863 7.86952 16.8057 9.23063 16.8057 9.23063C16.8057 9.23063 18.3752 10.3556 18.3752 16.8417"
+                      stroke="currentColor"
+                      strokeWidth="1.04167"
+                    />
+                    <path
+                      d="M10.0975 13.4531C10.0975 13.4531 9.50031 23.6753 12.667 25.5503C12.667 25.5503 16.5836 28.467 15.917 13.4531"
                       stroke="currentColor"
                       strokeWidth="1.04167"
                     />
@@ -509,7 +596,7 @@ const Rooms = () => {
       </section>
 
       {/* Full Width Suite Class Banner */}
-      <section className="h-[621px] bg-gray-300 relative overflow-hidden">
+      <section className="h-[621px] bg-cover bg-center bg-[url(../public/rrb.svg)] relative overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
       </section>
 
@@ -539,7 +626,7 @@ const Rooms = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20">
           {/* Family Staterooms */}
           <div>
-            <div className="h-80 bg-gray-300 rounded-lg mb-6"></div>
+            <div className="h-80 bg-cover bg-center bg-[url(../public/rr11.svg)] rounded-lg mb-6"></div>
             <h3
               className="text-xl font-bold text-gray-600 uppercase tracking-[2px] mb-4"
               style={{ fontFamily: "Proxima Nova, sans-serif" }}
@@ -562,7 +649,7 @@ const Rooms = () => {
 
           {/* Stateroom for Couples */}
           <div>
-            <div className="h-80 bg-gray-300 rounded-lg mb-6"></div>
+            <div className="h-80 bg-cover bg-center bg-[url(../public/rr12.svg)]  rounded-lg mb-6"></div>
             <h3
               className="text-xl font-bold text-gray-600 uppercase tracking-[2px] mb-4"
               style={{ fontFamily: "Proxima Nova, sans-serif" }}
@@ -587,7 +674,7 @@ const Rooms = () => {
 
           {/* Spacious Rooms for Groups */}
           <div>
-            <div className="h-80 bg-gray-300 rounded-lg mb-6"></div>
+            <div className="h-80 bg-cover bg-center bg-[url(../public/rr13.svg)] rounded-lg mb-6"></div>
             <h3
               className="text-xl font-bold text-gray-600 uppercase tracking-[2px] mb-4"
               style={{ fontFamily: "Proxima Nova, sans-serif" }}
@@ -643,14 +730,14 @@ const Rooms = () => {
               EXPLORE ACCESSIBLE OPTIONS
             </a>
           </div>
-          <div className="h-80 bg-gray-300 rounded-lg"></div>
+          <div className="h-80 bg-cover bg-center bg-[url(../public/rr21.svg)] rounded-lg"></div>
         </div>
       </section>
 
       {/* Royal Up Section */}
       <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="h-80 bg-gray-300 rounded-lg"></div>
+          <div className="h-80 bg-cover bg-center bg-[url(../public/rr22.svg)] rounded-lg"></div>
           <div>
             <h2
               className="text-xl md:text-2xl font-normal uppercase tracking-[2px] text-blue-900 mb-4"
@@ -696,7 +783,7 @@ const Rooms = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Royal Up */}
-          <div className="relative h-52 bg-gray-300 rounded-lg overflow-hidden group cursor-pointer">
+          <div className="relative h-52 bg-cover bg-center bg-[url(../public/rr31.svg)] rounded-lg overflow-hidden group cursor-pointer">
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
               <h3
@@ -709,7 +796,7 @@ const Rooms = () => {
           </div>
 
           {/* Ultimate Family Suite */}
-          <div className="relative h-52 bg-gray-300 rounded-lg overflow-hidden group cursor-pointer">
+          <div className="relative h-52 bg-cover bg-center bg-[url(../public/rr32.svg)] rounded-lg overflow-hidden group cursor-pointer">
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
               <h3
@@ -722,7 +809,7 @@ const Rooms = () => {
           </div>
 
           {/* Royal Suite Class */}
-          <div className="relative h-52 bg-gray-300 rounded-lg overflow-hidden group cursor-pointer">
+          <div className="relative h-52 bg-cover bg-center bg-[url(../public/rr33.svg)] rounded-lg overflow-hidden group cursor-pointer">
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
               <h3
@@ -735,7 +822,7 @@ const Rooms = () => {
           </div>
 
           {/* Deck Plans */}
-          <div className="relative h-52 bg-gray-300 rounded-lg overflow-hidden group cursor-pointer">
+          <div className="relative h-52 bg-cover bg-center bg-[url(../public/rr34.svg)] rounded-lg overflow-hidden group cursor-pointer">
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
               <h3

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="min-h-screen bg-white">
-      <div className="w-full h-[650px] relative overflow-hidden">
+      <div className="w-full h-[400px] md:h-[650px] relative overflow-hidden">
         <video
           src="/homeVideo.mp4"
           autoPlay
@@ -13,36 +13,40 @@ const Home = () => {
           playsInline
           className="absolute top-1/2 left-1/2 w-auto min-w-full min-h-full max-w-none -translate-x-1/2 -translate-y-1/2 object-cover"
         />
-        {/* Ваш контент поверх видео */}
+        {/* Контент поверх видео */}
         <div className="relative z-10 flex items-center justify-center h-full text-white">
-          <div className="w-[1300px] flex flex-col items-start">
-            <img src="../public/beat.png" className="w-[650px]" alt="" />
-            <p className="uppercase font-[PB] text-white text-[22px]">
+          <div className="w-full max-w-[95vw] md:w-[1300px] flex flex-col items-center md:items-start px-4">
+            <img
+              src="../public/beat.png"
+              className="w-[220px] md:w-[650px] mb-2"
+              alt=""
+            />
+            <p className="uppercase font-[PB] text-white text-[16px] md:text-[22px]">
               Up to $800 off
             </p>
-            <p className="uppercase font-[PB] text-white text-[22px]">
+            <p className="uppercase font-[PB] text-white text-[16px] md:text-[22px]">
               + Save an additional $50 on South Florida getaway sailings
             </p>
             <Link
               to={"/find-a-cruise"}
-              className="flex items-center justify-center mt-[30px] w-[155px] h-[40px] rounded-[3px] bg-[#FDBB11] text-[14px] text-[#002859] uppercase"
+              className="flex items-center justify-center mt-4 md:mt-[30px] w-[140px] md:w-[155px] h-[38px] md:h-[40px] rounded-[3px] bg-[#FDBB11] text-[13px] md:text-[14px] text-[#002859] uppercase"
             >
               Shop Now
             </Link>
 
             {/* Search Widget */}
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-[1100px] h-[108px] bg-gray-100 p-[20px] rounded shadow-lg">
-              <div className="flex h-full items-center">
+            <div className="max-sm:translate-y-[80%] absolute bottom-2 md:bottom-8 left-1/2 transform -translate-x-1/2 w-[98vw] max-w-[98vw] md:w-[1100px] h-auto md:h-[108px] bg-gray-100 p-2 md:p-[20px] rounded shadow-lg ">
+              <div className="flex flex-col md:flex-row h-full items-center">
                 {/* Cruising to */}
-                <div className="flex-1 px-5 py-5">
+                <div className="flex-1 px-2 py-2 md:px-5 md:py-5 w-full">
                   <label
-                    className="block text-black font-bold text-base mb-2"
+                    className="block text-black font-bold text-sm md:text-base mb-1 md:mb-2"
                     style={{ fontFamily: "Proxima Nova, sans-serif" }}
                   >
                     Cruising to
                   </label>
                   <div className="relative">
-                    <button className="w-full bg-white border border-gray-200 rounded px-4 py-3 text-left text-blue-600 font-bold flex items-center justify-between">
+                    <button className="w-full bg-white border border-gray-200 rounded px-3 py-2 md:px-4 md:py-3 text-left text-blue-600 font-bold flex items-center justify-between">
                       <span>Anywhere</span>
                       <svg
                         className="w-4 h-4"
@@ -60,17 +64,16 @@ const Home = () => {
                     </button>
                   </div>
                 </div>
-
                 {/* Leaving from */}
-                <div className="flex-1 px-5 py-5">
+                <div className="flex-1 px-2 py-2 md:px-5 md:py-5 w-full">
                   <label
-                    className="block text-black font-bold text-base mb-2"
+                    className="block text-black font-bold text-sm md:text-base mb-1 md:mb-2"
                     style={{ fontFamily: "Proxima Nova, sans-serif" }}
                   >
                     Leaving from
                   </label>
                   <div className="relative">
-                    <button className="w-full bg-white border border-gray-200 rounded px-4 py-3 text-left text-blue-600 font-bold flex items-center justify-between">
+                    <button className="w-full bg-white border border-gray-200 rounded px-3 py-2 md:px-4 md:py-3 text-left text-blue-600 font-bold flex items-center justify-between">
                       <span>Any port</span>
                       <svg
                         className="w-4 h-4"
@@ -88,17 +91,16 @@ const Home = () => {
                     </button>
                   </div>
                 </div>
-
                 {/* Leaving on */}
-                <div className="flex-1 px-5 py-5">
+                <div className="flex-1 px-2 py-2 md:px-5 md:py-5 w-full">
                   <label
-                    className="block text-black font-bold text-base mb-2"
+                    className="block text-black font-bold text-sm md:text-base mb-1 md:mb-2"
                     style={{ fontFamily: "Proxima Nova, sans-serif" }}
                   >
                     Leaving on
                   </label>
                   <div className="relative">
-                    <button className="w-full bg-white border border-gray-200 rounded px-4 py-3 text-left text-blue-600 font-bold flex items-center justify-between">
+                    <button className="w-full bg-white border border-gray-200 rounded px-3 py-2 md:px-4 md:py-3 text-left text-blue-600 font-bold flex items-center justify-between">
                       <span>Any date</span>
                       <svg
                         className="w-4 h-4"
@@ -116,11 +118,10 @@ const Home = () => {
                     </button>
                   </div>
                 </div>
-
                 {/* Search Button */}
-                <div className="flex items-center px-5">
+                <div className="flex items-center px-2 py-2 md:px-5 w-full md:w-auto">
                   <button
-                    className="bg-blue-600 text-white px-8 py-3 rounded font-bold hover:bg-blue-700 transition-colors"
+                    className="bg-blue-600 text-white w-full md:w-auto px-6 md:px-8 py-2 md:py-3 rounded font-bold hover:bg-blue-700 transition-colors"
                     style={{ fontFamily: "Proxima Nova, sans-serif" }}
                   >
                     Search cruises
@@ -274,7 +275,7 @@ const Home = () => {
       </section>
 
       {/* Newest Ships Section */}
-      <section className="relative h-[718px] bg-cover bg-center bg-[url(../public/hb.svg)] overflow-hidden">
+      <section className="relative h-[718px] bg-cover bg-center bg-[url(../public/hb.svg)] overflow-hidden max-sm:hidden">
         <div className="absolute inset-0 shadow-[inset_0_0_144px_72px_rgba(0,0,0,0.35)]"></div>
 
         <div className="relative z-10 h-full flex items-center">
@@ -314,67 +315,42 @@ const Home = () => {
                 <div className="relative bg-cover bg-center bg-[url(../public/ss1.svg)] rounded-lg overflow-hidden min-w-[280px] h-[500px]">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                   <div className="absolute bottom-4 text-white text-center w-full flex items-center flex-col">
-                    <h3
-                      className="text-lg font-normal uppercase leading-tight mb-1 font-[K] text-[30px]"
-                    >
+                    <h3 className="text-lg font-normal uppercase leading-tight mb-1 font-[K] text-[30px]">
                       STAR OF THE SEAS
                     </h3>
-                    <p
-                      className="text-sm"
-                    >
-                      PORT CANAVERAL
-                    </p>
+                    <p className="text-sm">PORT CANAVERAL</p>
                   </div>
                 </div>
 
                 <div className="relative bg-cover bg-center bg-[url(../public/ss2.svg)] rounded-lg overflow-hidden min-w-[280px] h-[500px]">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                   <div className="absolute bottom-4 text-white text-center w-full flex items-center flex-col">
-                    <h3
-                      className="text-lg font-normal uppercase leading-tight mb-1 font-[K] text-[30px]"
-                    >
+                    <h3 className="text-lg font-normal uppercase leading-tight mb-1 font-[K] text-[30px]">
                       WONDER OF THE SEAS
                     </h3>
-                    <p
-                      className="text-sm"
-                    >
-                      MIAMI
-                    </p>
+                    <p className="text-sm">MIAMI</p>
                   </div>
                 </div>
 
                 <div className="relative bg-cover bg-center bg-[url(../public/ss3.svg)] rounded-lg overflow-hidden min-w-[280px] h-[500px]">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                   <div className="absolute bottom-4 text-white text-center w-full flex items-center flex-col">
-                    <h3
-                      className="text-lg font-normal uppercase leading-tight mb-1 font-[K] text-[30px]"
-                    >
+                    <h3 className="text-lg font-normal uppercase leading-tight mb-1 font-[K] text-[30px]">
                       LEGEND OF THE SEAS
                     </h3>
-                    <p
-                      className="text-sm"
-                    >
-                      FORT LAUDERDALE
-                    </p>
+                    <p className="text-sm">FORT LAUDERDALE</p>
                   </div>
                 </div>
 
                 <div className="relative bg-cover bg-center bg-[url(../public/ss4.svg)] rounded-lg overflow-hidden min-w-[280px] h-[500px]">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                   <div className="absolute bottom-4 text-white text-center w-full flex items-center flex-col">
-                    <h3
-                      className="text-lg font-normal uppercase leading-tight mb-1 font-[K] text-[30px]"
-                    >
+                    <h3 className="text-lg font-normal uppercase leading-tight mb-1 font-[K] text-[30px]">
                       UTOPIA OF THE SEAS
                     </h3>
-                    <p
-                      className="text-sm"
-                    >
-                      PORT CANAVERAL
-                    </p>
+                    <p className="text-sm">PORT CANAVERAL</p>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -786,10 +762,9 @@ const Home = () => {
         </div>
       </section>
 
-
       {/* Popular Ports Section */}
       <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="text-center mb-16 flex">
+        <div className="text-center mb-16">
           <h1
             className="text-4xl md:text-5xl lg:text-6xl font-normal uppercase text-blue-900 leading-tight mb-8"
             style={{ fontFamily: "Kapra Neue Pro, sans-serif" }}
@@ -962,11 +937,7 @@ const Home = () => {
           <div className="relative md:row-span-2 h-[498px] bg-cover bg-center bg-[url(../public/t1.svg)] rounded-lg overflow-hidden group cursor-pointer">
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
             <div className="absolute w-full h-full text-white flex items-center justify-center">
-              <h3
-                className="text-2xl font-[K] uppercase"
-              >
-                CARIBBEAN
-              </h3>
+              <h3 className="text-2xl font-[K] uppercase">CARIBBEAN</h3>
             </div>
           </div>
 
@@ -974,11 +945,7 @@ const Home = () => {
           <div className="relative md:col-span-2 h-[244px]  bg-cover bg-center bg-[url(../public/t2.svg)] rounded-lg overflow-hidden group cursor-pointer">
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
             <div className="absolute w-full h-full text-white flex items-center justify-center">
-              <h3
-                className="text-2xl font-[K] uppercase"
-              >
-                ALASKA
-              </h3>
+              <h3 className="text-2xl font-[K] uppercase">ALASKA</h3>
             </div>
           </div>
 
@@ -986,11 +953,7 @@ const Home = () => {
           <div className="relative h-[244px]  bg-cover bg-center bg-[url(../public/t3.svg)] rounded-lg overflow-hidden group cursor-pointer">
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
             <div className="absolute w-full h-full text-white flex items-center justify-center">
-              <h3
-                className="text-2xl font-[K]  uppercase"
-              >
-                BAHAMAS
-              </h3>
+              <h3 className="text-2xl font-[K]  uppercase">BAHAMAS</h3>
             </div>
           </div>
 
@@ -998,11 +961,7 @@ const Home = () => {
           <div className="relative h-[244px]  bg-cover bg-center bg-[url(../public/t4.svg)] rounded-lg overflow-hidden group cursor-pointer">
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
             <div className="absolute w-full h-full text-white flex items-center justify-center">
-              <h3
-                className="text-2xl font-[K]  uppercase"
-              >
-                MEXICO
-              </h3>
+              <h3 className="text-2xl font-[K]  uppercase">MEXICO</h3>
             </div>
           </div>
 
@@ -1010,9 +969,7 @@ const Home = () => {
           <div className="relative md:col-span-2 h-[244px]  bg-cover bg-center bg-[url(../public/t5.svg)] rounded-lg overflow-hidden group cursor-pointer">
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
             <div className="absolute w-full h-full text-white flex items-center justify-center">
-              <h3
-                className="text-2xl font-[K]  uppercase"
-              >
+              <h3 className="text-2xl font-[K]  uppercase">
                 SOUTHERN CARIBBEAN
               </h3>
             </div>
@@ -1022,9 +979,7 @@ const Home = () => {
           <div className="relative h-[244px]  bg-cover bg-center bg-[url(../public/t6.svg)] rounded-lg overflow-hidden group cursor-pointer">
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
             <div className="absolute w-full h-full text-white flex items-center justify-center">
-              <h3
-                className="text-xl font-[K] uppercase leading-tight"
-              >
+              <h3 className="text-xl font-[K] uppercase leading-tight">
                 ALASKA WHALE WATCHING & WILDLIFE
               </h3>
             </div>
@@ -1034,11 +989,7 @@ const Home = () => {
           <div className="relative h-[244px]  bg-cover bg-center bg-[url(../public/t7.svg)] rounded-lg overflow-hidden group cursor-pointer">
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
             <div className="absolute w-full h-full text-white flex items-center justify-center">
-              <h3
-                className="text-2xl font-[K]  uppercase"
-              >
-                EUROPE
-              </h3>
+              <h3 className="text-2xl font-[K]  uppercase">EUROPE</h3>
             </div>
           </div>
         </div>
