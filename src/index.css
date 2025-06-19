@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'PR';
+    src: url('./Fonts/prox-regular-UDTIh_YD.ttf');
+}
+
+@font-face {
+    font-family: 'PB';
+    src: url('./Fonts/prox-bold-B18tUPll.ttf');
+}
+
+@font-face {
+    font-family: 'PL';
+    src: url('./Fonts/prox-light-D61mr4Wz.ttf');
+}
+
+@font-face {
+    font-family: 'K';
+    src: url('./Fonts/kapra-D-0UzV6U.woff2');
+}
+
+@font-face {
+    font-family: 'RR';
+    src: url('./Fonts/Roboto-Regular-CN_pkOMA.ttf');
+}
+
+@font-face {
+    font-family: 'RB';
+    src: url('./Fonts/Roboto-Bold-_ZJd4Sbe.ttf');
+}
